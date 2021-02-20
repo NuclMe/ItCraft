@@ -36,3 +36,37 @@
     transform: rotate(360deg);
   }
 }
+
+.container{
+  max-width: 600px;
+  width: 100%;
+  padding: 0 10px;
+  margin:  0 auto;
+}
+
+header{
+  background-color: #000;
+}
+
+.header-inner{
+  padding: 0 30px;
+  display:flex;
+  
+}
+.logo-wrapper{
+  display: block;
+  img{
+    max-width: 117px;
+    width: 100%;
+  }
+}
+
+.menu{
+  display:flex;
+  padding:0;
+  li{
+    &:marker {
+      display: none;
+    }
+  }
+}
