@@ -37,36 +37,43 @@
   }
 }
 
-.container{
+.container {
   max-width: 600px;
   width: 100%;
   padding: 0 10px;
-  margin:  0 auto;
+  margin: 0 auto;
 }
 
-header{
+header {
   background-color: #000;
 }
 
-.header-inner{
+.header-inner {
   padding: 0 30px;
-  display:flex;
-  
+  display: flex;
 }
-.logo-wrapper{
+
+.logo-wrapper {
+  flex-shrink: 0;
+  flex-grow: 0;
   display: block;
-  img{
+  margin: 0 60px 0 0;
+  img {
     max-width: 117px;
     width: 100%;
   }
 }
 
-.menu{
-  display:flex;
-  padding:0;
-  li{
-    &:marker {
-      display: none;
+.menu {
+  flex-grow: 1;
+  flex-shrink: 1;
+  min-width: 1px;
+  display: flex;
+  padding: 0;
+  .item {
+    margin: 0 40px 0 0;
+    &:last-child {
+      margin: 0;
     }
   }
 }

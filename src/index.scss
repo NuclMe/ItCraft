@@ -77,6 +77,10 @@ ul {
     list-style: none;
 }
 
+li{
+    list-style-type: none;
+}
+
 caption,
 th {
     text-align: left;
@@ -225,14 +229,3 @@ textarea.placeholder {
     position: relative;
 }
 
-.logo-wrapper{
-  flex-shrink:0;
-  flex-grow:0;
-}
-
-.menu{
-  flex-grow:1;
-  flex-shrink:1;
-  min-width:1px;
-  
-}
