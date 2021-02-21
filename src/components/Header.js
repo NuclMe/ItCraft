@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../logo.svg";
 
+
 function Header() {
   return (
     <header>
@@ -25,6 +26,11 @@ function Header() {
             <a href="#">Carrier</a>
           </li>
         </menu>
+        <div className="member-menu">
+            <svg className="svg-icon">
+                <use xlinkHref="#icon-user"></use>
+            </svg>
+        </div>
       </div>
     </header>
   );
