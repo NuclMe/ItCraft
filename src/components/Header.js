@@ -26,10 +26,21 @@ function Header() {
             <a href="#">Carrier</a>
           </li>
         </menu>
-        <div className="member-menu">
-            <svg className="svg-icon">
-                <use xlinkHref="#icon-user"></use>
-            </svg>
+        <div className="user-menu">
+          {/* <span className='burger-btn'>
+
+          </span> */}
+            <a className='member-menu' href='#'>
+              <svg className="svg-icon">
+                  <use xlinkHref="#icon-user"></use>
+              </svg>
+              <span className='member-menu_text'> Sign in </span>
+            </a>
+            <a className="language">
+              <svg className="svg-icon">
+                  <use xlinkHref="#icon-flag"></use>
+              </svg>
+            </a>
         </div>
       </div>
     </header>

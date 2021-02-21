@@ -40,7 +40,7 @@ $blue: #009FD7;
 }
 
 .container {
-  max-width: 600px;
+  max-width: 955px;
   width: 100%;
   padding: 0 10px;
   margin: 0 auto;
@@ -53,6 +53,7 @@ header {
 .header-inner {
   padding: 15px 30px;
   display: flex;
+  position: relative;
 }
 
 .logo-wrapper {
@@ -76,6 +77,7 @@ header {
   margin: 0;
   .item { 
     margin: 0 40px 0 0;
+    
     &:last-child {
       margin: 0;
     }
@@ -83,6 +85,7 @@ header {
       cursor: pointer;
       transition: color .3s;
       font-weight: 700;
+      color: #fff;
       @media screen and (min-width: 1024px) {
         &:hover{
           color: $blue;
@@ -94,15 +97,39 @@ header {
 }
 
 
-.svg-icon{    
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  fill: currentColor;
-}
 .member-menu{
   svg{
     font-size: 25px;
     fill: #fff;
   }
 }
+
+.user-menu{
+  display:flex;
+  align-items: center;
+  flex-shrink:0;
+  flex-grow:0;
+  
+}
+
+.member-menu{
+  display:flex;
+  align-items: center;
+  margin: 0 40px 0 0;
+  .svg-icon{
+    margin: 0 10px 0 0;
+  }
+  .member-menu_text{
+    font-weight: 700;
+    color: #fff;
+  }
+}
+
+.language{
+  display:flex;
+  align-items: center;
+  svg{
+    font-size: 25px;
+  }
+}
+
