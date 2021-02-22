@@ -8,7 +8,7 @@ aside{
     flex-shrink:0;
     flex-grow:0;
     max-width: 370px;
-    
+    margin: 0 20px 0 0;
     // .sorting-item{
     //     background-color: #fff;
     //     padding: 12px;
@@ -17,7 +17,7 @@ aside{
 .headline{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    // justify-content: flex-start;
     font-weight: 700;
     color: $blue;
     margin: 0 0 10px 0;
@@ -65,8 +65,12 @@ section{
     background-color: #fff;
     padding: 12px;
     margin: 0 0  10px 0;
+    border-radius: 4px;
     &:last-child{
         margin: 0;
+    }
+    &.transparent{
+        background-color: transparent;
     }
     .title{
         display: flex;
@@ -95,8 +99,7 @@ section{
             z-index: 2;
             width: 18px;
             height: 18px;            
-            border: 1px solid #CCCCCC;            
-            font-family: "icomoon" !important;
+            border: 1px solid #CCCCCC;                        
             speak: none;
             font-style: normal;
             font-weight: normal;
@@ -181,5 +184,87 @@ section{
         width: 50%;
         margin: 0 20px 0 0;
         
+    }
+}
+
+.page-name_wrapper{
+    display:flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 18px;
+    margin: 0 0 6px 0;
+}
+
+.save-button{
+    background-color: $blue;
+    color: #fff;
+    transition: background-color .3s, color .3s;
+    padding: 5px 15px;
+    cursor: pointer;
+    outline:none;
+    border:none;
+    font-size: 14px;
+    margin: 0 15px 0 0;
+    font: 700 14px/1.2 "Open Sans", sans-serif;
+    border-radius: 10px;
+    @media screen and (min-width: 1024px) {
+        &:hover{
+            background-color: #F0F0F0;
+            color: #666666;
+            
+        }
+    }
+}
+.suggestion-number{
+    color: $blue;
+    margin: 0 5px 0 0;
+}
+
+.sorting-tags{
+    display: flex;
+    margin: 0 0 10px 0;
+    .item{
+        display: flex;
+        align-items: center;
+        background-color: #C0C0C0;
+        padding: 5px 10px;
+        margin: 0 10px 0 0;
+        border-radius: 5px;
+        transition: background-color .3s;
+        &:last-child{
+            margin: 0;
+        }
+        @media screen and (min-width: 1024px) {
+            &:hover{
+                background-color: $blue;
+            }
+        }
+    }
+    .text{
+        padding: 0 5px 0 0;
+        color: #fff;
+    }
+    svg{
+        color: #fff;
+        font-size: 12px;
+    }
+}
+
+.sorting{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 0 10px 0;
+    .drop{
+        display: flex;
+        align-items: center;
+        color: $blue;
+        cursor: pointer;
+        .option{
+            margin: 0 5px 0 0 ;
+        }
+    }
+    span{
+        margin: 0 5px 0 0;
     }
 }

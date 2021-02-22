@@ -1,5 +1,6 @@
 import React from "react";
 import '../Main.scss';
+import {Thumbs} from './Thumbs.js'
 
 function Main(){
     return(
@@ -52,7 +53,7 @@ function Main(){
                                     <input type="select" className='text-field' placeholder='All' id='car-type_input'/>                            
                                     <div name="1" id="car-type_list" className='dropdown-holder'>
                                         <svg className="svg-icon">
-                                                <use xlinkHref="#icon-cross"></use>
+                                                <use xlinkHref="#icon-cross_rounded"></use>
                                         </svg>
                                         <div className="dropdown-inner">
                                             <span className='item'> Audi</span>
@@ -266,9 +267,63 @@ function Main(){
                         </div>
                       
                       </div>
+                      <div className="sorting-wrapper transparent">
+                        <div className="row">
+                            <input type="checkbox" name='manual' id='option1' className='checkbox'/>
+                            <label htmlFor="option1">
+                                Manual gearbox
+                            </label>
+                        </div>
+                        <div className="row">
+                            <input type="checkbox" name='manual' id='option1' className='checkbox'/>
+                            <label htmlFor="option1">
+                                Manual gearbox
+                            </label>
+                        </div>  
+                      </div>
                     </aside>
                     <section>        
-                        21212        
+                        <div className="page-name_wrapper">
+                            <button className='save-button'> 
+                                Save Search
+                            </button>
+                            <span className='suggestion-number'>
+                                19,465
+                            </span>
+                            <h1 className='title'>
+                                Ads matching your search criteria
+                            </h1>
+                        </div>  
+                        <div className="sorting-tags">
+                            <a className="item" href='#'>
+                                <span className='text'>Used</span>
+                                <svg className="svg-icon">
+                                    <use xlinkHref="#icon-cross"></use>
+                                </svg>
+                            </a>
+                            <a className="item" href='#'>
+                                <span className='text'>Used</span>
+                                <svg className="svg-icon">
+                                    <use xlinkHref="#icon-cross"></use>
+                                </svg>
+                            </a>
+                            <a className="item" href='#'>
+                                <span className='text'>Used</span>
+                                <svg className="svg-icon">
+                                    <use xlinkHref="#icon-cross"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div className="sorting">
+                            <span> Sort By:</span>
+                            <div className="drop">
+                                <span className='option'>Price Ascending </span>
+                                <svg className="svg-icon">
+                                    <use xlinkHref="#icon-arrow-down"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <Thumbs/>
                     </section>
                 </div>
             </div>

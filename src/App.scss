@@ -54,6 +54,9 @@ header {
   padding: 15px 30px;
   display: flex;
   position: relative;
+  @media screen and (max-width: 992px) {
+    flex-direction: column;
+  }
 }
 
 .logo-wrapper {
@@ -61,6 +64,9 @@ header {
   flex-grow: 0;
   display: block;
   margin: 0px 60px 0px 0;
+    @media screen and (max-width: 992px) {
+      margin: 0 0 10px 0;
+    }
   img {
     max-width: 117px;
     width: 100%;
@@ -75,9 +81,15 @@ header {
   align-items: center;
   padding: 0;
   margin: 0;
+  @media screen and (max-width: 992px) {
+   margin: 0 0 10px 0;
+   justify-content: center;
+  }
   .item { 
     margin: 0 40px 0 0;
-    
+    @media screen and (max-width: 992px) {
+      margin: 0 10px 0 0;
+    }
     &:last-child {
       margin: 0;
     }
@@ -109,19 +121,28 @@ header {
   align-items: center;
   flex-shrink:0;
   flex-grow:0;
-  
+    @media screen and (max-width: 992px) {
+      justify-content: center;
+    }
 }
 
 .member-menu{
   display:flex;
   align-items: center;
   margin: 0 40px 0 0;
+  @media screen and (max-width: 992px) {
+    margin: 0 10px 0 0;
+    font-size: 20px;
+  }
   .svg-icon{
     margin: 0 10px 0 0;
   }
   .member-menu_text{
     font-weight: 700;
     color: #fff;
+    @media screen and (max-width: 425px) {
+      display: none;
+    }
   }
 }
 
