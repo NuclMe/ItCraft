@@ -1,7 +1,7 @@
 import React from "react";
 import {useEffect ,useState} from "react";
 import '../Thumbs.scss';
-import {Pagination} from './Pagination'
+
 
 function Thumbs(){
     const [error, setError] = useState(null);
@@ -96,6 +96,7 @@ function Thumbs(){
          
           ))}
         </div>
+     
       );
     }    
 }

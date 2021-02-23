@@ -1,6 +1,7 @@
 import React from "react";
 import '../Main.scss';
-import {Thumbs} from './Thumbs.js'
+import {Thumbs} from './Thumbs.js';
+import {Pagination} from './Pagination';
 
 function Main(){
     return(
@@ -15,15 +16,13 @@ function Main(){
                 <div className='main-inner'>
                     <aside>
                       <div className='sorting-wrapper'>
-                           <div className='sorting-holder'>
-                               {/* <div className="sorting-item"> */}
-                                    <div className="tabs-container">
-                                        <a href="#" className="tab">All</a>
-                                        <a href="#" className="tab active">Used</a>
-                                        <a href="#" className="tab">Classics</a>
-                                        <a href="#" className="tab">New</a>
-                                    </div>
-                               {/* </div> */}
+                           <div className='sorting-holder'>                        
+                                <div className="tabs-container">
+                                    <a href="#" className="tab">All</a>
+                                    <a href="#" className="tab active">Used</a>
+                                    <a href="#" className="tab">Classics</a>
+                                    <a href="#" className="tab">New</a>
+                                </div>                              
                            </div>
                            <div className='sorting-holder'>
                                <div className="title">
@@ -178,25 +177,29 @@ function Main(){
                             Transmission
                         </div>
                         <div className="row">
-                            <input type="checkbox" name='manual' id='option1' className='checkbox'/>
+                            <input type="checkbox" name='manual' id='option1' className='checkbox'/>                            
+                            <span className='checkbox-container'> </span>
                             <label htmlFor="option1">
                                 Manual gearbox
                             </label>
                         </div>
                         <div className="row">
                             <input type="checkbox" name='manual' id='option2' className='checkbox'/>
+                            <span className='checkbox-container'> </span>
                             <label htmlFor="option2">
                                 Manual gearbox
                             </label>
                         </div>
                         <div className="row">
                             <input type="checkbox" name='manual' id='option3' className='checkbox'/>
+                            <span className='checkbox-container'> </span>
                             <label htmlFor="option3">
                                 Manual gearbox
                             </label>
                         </div>
                         <div className="row">
                             <input type="checkbox" name='manual' id='option4' className='checkbox'/>
+                            <span className='checkbox-container'> </span>
                             <label htmlFor="option4">
                                 Manual gearbox
                             </label>
@@ -225,26 +228,30 @@ function Main(){
                           Fuel type
                         </div>
                         <div className="row">
-                            <input type="checkbox" name='manual' id='option1' className='checkbox'/>
-                            <label htmlFor="option1">
+                            <input type="checkbox" name='manual' id='option10' className='checkbox'/>
+                            <span className='checkbox-container'> </span>
+                            <label htmlFor="option10">
+                                <span>Manual gearbox</span>
+                            </label>
+                        </div>
+                        <div className="row">
+                            <input type="checkbox" name='manual' id='option11' className='checkbox'/>
+                            <span className='checkbox-container'> </span>
+                            <label htmlFor="option11">
                                 Manual gearbox
                             </label>
                         </div>
                         <div className="row">
-                            <input type="checkbox" name='manual' id='option2' className='checkbox'/>
-                            <label htmlFor="option2">
+                            <input type="checkbox" name='manual' id='option12' className='checkbox'/>
+                            <span className='checkbox-container'> </span>
+                            <label htmlFor="option12">
                                 Manual gearbox
                             </label>
                         </div>
                         <div className="row">
-                            <input type="checkbox" name='manual' id='option3' className='checkbox'/>
-                            <label htmlFor="option3">
-                                Manual gearbox
-                            </label>
-                        </div>
-                        <div className="row">
-                            <input type="checkbox" name='manual' id='option4' className='checkbox'/>
-                            <label htmlFor="option4">
+                            <input type="checkbox" name='manual' id='option13' className='checkbox'/>
+                            <span className='checkbox-container'> </span>
+                            <label htmlFor="option13">
                                 Manual gearbox
                             </label>
                         </div>
@@ -254,14 +261,16 @@ function Main(){
                             New/Used / CPO
                         </div>
                         <div className="row">
-                            <input type="checkbox" name='manual' id='option1' className='checkbox'/>
-                            <label htmlFor="option1">
+                            <input type="checkbox" name='manual' id='option14' className='checkbox'/>
+                            <span className='checkbox-container'> </span>
+                            <label htmlFor="option14">
                                 Manual gearbox
                             </label>
                         </div>
                         <div className="row">
-                            <input type="checkbox" name='manual' id='option2' className='checkbox'/>
-                            <label htmlFor="option2">
+                            <input type="checkbox" name='manual' id='option15' className='checkbox'/>
+                            <span className='checkbox-container'> </span>
+                            <label htmlFor="option15">
                                 Manual gearbox
                             </label>
                         </div>
@@ -269,14 +278,16 @@ function Main(){
                       </div>
                       <div className="sorting-wrapper transparent">
                         <div className="row">
-                            <input type="checkbox" name='manual' id='option1' className='checkbox'/>
-                            <label htmlFor="option1">
+                            <input type="checkbox" name='manual' id='option17' className='checkbox'/>
+                            <span className='checkbox-container'> </span>
+                            <label htmlFor="option17">
                                 Manual gearbox
                             </label>
                         </div>
                         <div className="row">
-                            <input type="checkbox" name='manual' id='option1' className='checkbox'/>
-                            <label htmlFor="option1">
+                            <input type="checkbox" name='manual' id='option18' className='checkbox'/>
+                            <span className='checkbox-container'> </span>
+                            <label htmlFor="option18">
                                 Manual gearbox
                             </label>
                         </div>  
@@ -324,6 +335,7 @@ function Main(){
                             </div>
                         </div>
                         <Thumbs/>
+                        <Pagination/>
                     </section>
                 </div>
             </div>

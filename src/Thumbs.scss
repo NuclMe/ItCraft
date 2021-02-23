@@ -7,9 +7,16 @@
 .thumb-href{
     display: flex;
     padding: 10px 15px 10px 10px;
+    @media screen and (max-width: 425px) {
+        flex-direction: column;
+        padding: 10px;
+    }
 }
 .thumb-inner{
     margin: 0 0  0 15px;
+    @media screen and (max-width: 425px) {
+        margin: 15px 0 0  0 ;
+    }
     .title{
         color: #333333;
         font-size: 18px;
@@ -23,16 +30,25 @@
         display: flex;
     }
     .row{
-        margin: 0 0 10px 0;        
+        margin: 0 0 10px 0;  
+        @media screen and (max-width: 425px) {
+            margin: 0 0 5px 0;
+        }      
     }
 }
 
 .param-wrapper{
     display:flex;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
     .col{
         margin: 0 40px 0 0;
         &:last-child{
             margin: 0;
+        }
+        @media screen and (max-width: 768px) {
+          margin: 0 20px 0 0;
         }
     }
     .item{
@@ -50,4 +66,45 @@
 .description{
     text-align: left;
     color: #666666;
+}
+
+.pagination{
+    display:flex;
+    justify-content: center;
+    margin: 0 0 15px 0;
+    .box{
+        display:flex;
+        align-items: center;
+        margin: 0 10px 0 0;
+        color: #009FD7;
+        &:last-child{
+            margin: 0;
+        }
+        &.prew{
+            .text{
+                margin: 0 0 0 5px;
+                color: #000000;
+            }
+        }
+        &.next{
+            .text{
+                margin: 0 5px 0 0 ;
+                color: #009FD7;
+            }
+            svg{
+                color: #009FD7;
+            }
+        }
+        &.active, &.more{
+            color: #000;
+        }
+        svg{
+            font-size: 20px;
+            color: #000000;
+        }
+    }
+}
+.pagination-numbers{
+    display:flex;    
+    margin: 0 15px;
 }
